@@ -1,0 +1,11 @@
+{
+  "name": "flexbox-set",
+  "version": "0.1.6",
+  "description": "Set of css styles to create flexbox layout",
+  "main": "src/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vasily Timofeev",
+  "license": "ISC"
+}

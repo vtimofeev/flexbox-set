@@ -1,0 +1,157 @@
+@import 'nib'
+@import 'size'
+
+/* default */
+.flex-columns, .flex {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  .flex-break {
+    width: 100%;
+  }
+}
+
+.flex-rows {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .flex-break {
+    height: 100%;
+  }
+}
+
+.flex-wrap, .flex-multi {
+  flex-wrap: wrap;
+}
+
+.flex-wrap--reverse, .flex-multi--reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.flex-cell--static {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.flex-cell--pull-left {
+  @extend .flex-cell--static
+  margin-right: auto;
+}
+
+.flex-cell--pull-right {
+  @extend .flex-cell--static
+  margin-left: auto;
+}
+
+.flex-cell--pull-top {
+  @extend .flex-cell--static
+  margin-bottom: auto;
+}
+
+.flex-cell--pull-bottom {
+  @extend .flex-cell--static
+  margin-top: auto;
+}
+
+.flex-cell--full {
+  @extend .flex-cell--static
+  flex-basis: 100%;
+}
+
+.flex-cell--1-2 {
+  @extend .flex-cell--static
+  flex-basis: 50%;
+}
+
+.flex-cell--2-3 {
+  @extend .flex-cell--static
+  flex-basis: 66.66%;
+}
+
+.flex-cell--1-3 {
+  @extend .flex-cell--static
+  flex-basis: 33.33%;
+}
+
+.flex-cell--1-4 {
+  @extend .flex-cell--static
+  flex-basis: 25%;
+}
+
+.flex-cell--1-5 {
+  @extend .flex-cell--static
+  flex-basis: 20%;
+}
+
+.flex--main-center {
+  justify-content: center;
+}
+
+.flex--main-end {
+  justify-content: flex-end;
+}
+
+.flex--main-around {
+  justify-content: space-around;
+}
+
+.flex--main-evenly {
+  justify-content: space-evenly;
+}
+
+.flex--main-between {
+  justify-content: space-between;
+}
+
+.flex--cross-start {
+  align-items: flex-start;
+}
+
+.flex--cross-center {
+  align-items: center;
+}
+
+.flex--cross-end {
+  align-items: flex-end;
+}
+
+/* default */
+.flex--cross-fill, .flex--cross-stretch {
+  align-items: stretch;
+}
+
+.flex-multi--cross-start {
+  align-content: flex-start;
+}
+
+.flex-multi--cross-center {
+  align-content: center;
+}
+
+.flex-multi--cross-end {
+  align-content: flex-end;
+}
+
+.flex-multi--cross-around {
+  align-content: space-around;
+}
+
+.flex-multi--cross-between {
+  align-content: space-between;
+}
+
+/* default */
+.flex-multi--cross-fill, .flex-multi--cross-stretch {
+  align-content: stretch;
+}
+
+

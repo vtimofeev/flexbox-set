@@ -1,27 +1,43 @@
 # Flexbox styles set.
-This is a set of css classes to create layout with flexbox.
 
+This is a set of css classes to create layout with flexbox.
+Global prefixed browser support 97.19%: Internet Explorer 10+, Microsoft Edge, Firefox, Chrome, Safari, Opera;
 
 ## Use with npm and webpack
 
-Install package
-`
+Install package with npm
+```
 npm install flexbox-set
-`
+```
 
-Import in JS file (webpack)
-`
+Import old way in html
+```
+<html>
+<head>
+...
+<link rel="stylesheet" href="{path to node modules}/node_modules/flexbox-set/src/index.css">
+</head>
+```
+
+Webpack import in js file:
+```
 import 'flexbox-set/src/index.css'
-`
+```
 
-Usage
+
+## Examples
+
+Columns layout with dynamic items:
 ```
 <div class="flex-columns flex--main-center flex--cross-center">
     <div class="flex-cell">50%</div>
     <div class="flex-cell">50%</div>
 </div>
+```
 
-<div class="flex-columns flex--main-center flex--cross-center">
+Rows layout with static items:
+```
+<div class="flex-rows flex--main-center flex--cross-center">
     <div class="flex-cell--1-3">1/3</div>
     <div class="flex-cell--2-3">2/3</div>
 </div>
@@ -100,36 +116,42 @@ Sets align-items:stretch.
 
 ## Items classes
 
-#### flex-cell
+**flex-cell**
 
 Item will fill all free space in the main axis.
 
 Sets flex item parameters grow 1 and shrink 1;
 Flex basis is auto.
 
-#### flex-cell--static
+**flex-cell--static**
 
 Item size will be as the content size in the main axis.
 
 Sets flex item parameters grow 0 and shrink 0;
 Flex basis is auto.
 
-#### flex-cell--full
-Set flex basis 100%, for example:
+**flex-cell--full**
+
+Extends `flex-cell--static` and sets flex-basis:100%, for example:
 If container is `flex-columns` item will be width 100%
 if container is `flex-rows` item will be height 100%
 
-#### flex-cell--1-2
-Set flex basis 50%
+**flex-cell--1-2**
 
-#### flex-cell--1-3
-Set flex basis 33%
+Extends `flex-cell--static` and sets flex-basis:50%
 
-#### flex-cell--2-3
-Set flex basis 66%
+**flex-cell--1-3**
 
-#### flex-cell--1-4
-Set flex basis 25%
+Extends `flex-cell--static` and sets flex-basis:33%
 
-#### flex-cell--1-5
-Set flex basis 20%
+**flex-cell--2-3**
+
+Extends `flex-cell--static` and sets flex-basis:66%
+
+**flex-cell--1-4**
+
+Extends `flex-cell--static` and sets flex-basis:25%
+
+**flex-cell--1-5**
+
+Extends `flex-cell--static` and sets flex-basis:20%

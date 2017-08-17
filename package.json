@@ -1,10 +1,14 @@
 {
   "name": "flexbox-set",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Set of css styles to create flexbox layout",
   "main": "src/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtimofeev/flexbox-set.git"
   },
   "author": "Vasily Timofeev",
   "license": "ISC"

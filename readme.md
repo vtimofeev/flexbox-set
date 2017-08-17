@@ -104,15 +104,35 @@ Sets align-items:stretch.
 
 **flex-multi--cross-start**
 
+Sets align-content:flex-start;
+Item lines move to start in the global cross axis.
+
 **flex-multi--cross-end**
+
+Sets align-content:flex-start;
+Item lines move to end in the global cross axis.
+
 
 **flex-multi--cross-center**
 
+Sets align-content:center;
+Item lines move to center in the global cross axis.
+
 **flex-multi--cross-around**
+
+Sets align-content:space-around;
+Item lines are evenly distributed in the global cross axis.
 
 **flex-multi--cross-between**
 
+Sets align-content:space-between;
+Item lines are evenly distributed in the global cross axis.
+
 **flex-multi--cross-stretch** (default)
+
+Sets align-content:stretch;
+Item lines stretch in the global cross axis.
+
 
 ## Items classes
 

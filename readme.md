@@ -24,8 +24,80 @@ Webpack import in js file:
 import 'flexbox-set/src/index.css'
 ```
 
+## Examples and demo
 
-## Examples
+```html
+
+    <h1 class="flex-cell--static">Basic grid, flex-columns flex-multi</h1>
+    <main style="height: 300px; width: 600px" class="flex-columns flex-multi flex-cell--static">
+        <div class="flex-cell--1-3">flex-cell--1-3</div>
+        <div class="flex-cell--1-3">flex-cell--1-3</div>
+        <div class="flex-cell--1-3">flex-cell--1-3</div>
+        <div class="flex-cell--2-3">flex-cell--2-3</div>
+        <div class="flex-cell--1-3">flex-cell--1-3</div>
+        <div class="flex-cell--1-4">flex-cell--1-4</div>
+        <div class="flex-cell--1-4">flex-cell--1-4</div>
+        <div class="flex-cell--1-4">flex-cell--1-4</div>
+        <div class="flex-cell--1-4">flex-cell--1-4</div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+        <div class="flex-cell">flex-cell (auto)</div>
+    </main>
+
+```
+
+![Basic grid, flex-columns flex-multi](https://raw.githubusercontent.com/vtimofeev/flexbox-set/master/images/basic-columns.png)
+
+```html
+
+    <h1>Basic grid, flex-rows</h1>
+    <main style="height: 300px; width: 600px" class="flex-rows">
+        <div class="flex-cell">flex-cell (auto)</div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+    </main>
+
+```
+
+![Basic grid, flex-rows](https://raw.githubusercontent.com/vtimofeev/flexbox-set/master/images/basic-rows.png)
+
+
+
+```html
+
+    <h1>Advanced layout, flex-rows and flex-columns</h1>
+    <main style="height: 600px; width: 600px" class="flex-rows">
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+        <div class="flex-cell flex-columns">
+            <div class="flex-cell--1-5">flex-cell--1-5</div>
+            <div class="flex-cell">flex-cell (auto)</div>
+            <div class="flex-cell--1-5">flex-cell--1-5</div>
+        </div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+    </main>
+
+```
+
+![Advanced layout, flex-rows and flex-columns](https://raw.githubusercontent.com/vtimofeev/flexbox-set/master/images/advanced-rows-columns.png)
+
+```html
+
+    <h1>Advanced layout, flex-columns and flex-rows</h1>
+    <main style="height: 600px; width: 600px" class="flex-columns">
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+        <div class="flex-cell flex-rows">
+            <div class="flex-cell--1-5">flex-cell--1-5</div>
+            <div class="flex-cell">flex-cell (auto)</div>
+            <div class="flex-cell--1-5">flex-cell--1-5</div>
+        </div>
+        <div class="flex-cell--1-5">flex-cell--1-5</div>
+    </main>
+
+```
+
+![Advanced layout, flex-columns and flex-rows](https://raw.githubusercontent.com/vtimofeev/flexbox-set/master/images/advanced-columns-rows.png)
+
+## Other examples
 
 Columns layout with dynamic items:
 ```

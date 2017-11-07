@@ -1,6 +1,6 @@
 {
   "name": "flexbox-set",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Set of css styles to create flexbox layout",
   "main": "src/index.css",
   "scripts": {
@@ -11,5 +11,8 @@
     "url": "https://github.com/vtimofeev/flexbox-set.git"
   },
   "author": "Vasily Timofeev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  }
 }

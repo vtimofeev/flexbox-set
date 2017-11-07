@@ -262,6 +262,23 @@ div {
   -webkit-align-content: stretch;
   align-content: stretch;
 }
+.flex-cell--self-left,
+.flex-cell--self-top {
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+}
+.flex-cell--self-right,
+.flex-self--self-bottom {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  -ms-flex-item-align: end;
+}
+.flex-cell--self-center {
+  -webkit-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+}
 .pad-1 {
   padding: 1rem;
 }

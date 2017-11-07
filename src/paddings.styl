@@ -1,0 +1,35 @@
+
+for $size in $padSteps {
+  $sizeName = replace('\.', '-', ''+$size);
+
+  .pad--{$sizeName} {
+    padding: $size rem;
+  }
+
+  .mar--{$sizeName} {
+    margin: $size rem;
+  }
+
+  .mar-pad-top--{$sizeName} {
+    margin-top: $size rem;
+    padding-top: $size rem;
+  }
+
+  .mar-left--{$sizeName} {
+    margin-left: $size rem;
+  }
+
+  .mar-right--{$sizeName} {
+    margin-right: $size rem;
+  }
+}
+
+for $size in (0..25){
+  .level--{$size} {
+    margin-left: ($size - 1 ) * 2 rem;
+  }
+}
+
+
+
+

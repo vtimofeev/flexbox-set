@@ -9,8 +9,12 @@
 </head>
 <body>
 <div id="app">
-    <h1 class="title--3">Flexbox</h1>
-    <h2 class="subtitle--3">Flexbox</h2>
+    <div class="block">
+        <h1 class="title--3">Flexbox</h1>
+        <h2 class="subtitle--3" class="delay2">Flexbox 2</h2>
+    </div>
+
+    <el-checkbox v-model="enable">Enable</el-checkbox>
     <h2>Direction</h2>
     <el-radio-group v-model="direction">
         <el-radio label="flex-columns">flex-columns</el-radio>
@@ -72,6 +76,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/1.4.2/index.js"></script>
 
 <script>
+
   var app = new Vue({
     el: '#app',
     data: {
@@ -83,6 +88,8 @@
       message: 'Hello Vue!'
     }
   })
+
 </script>
+
 </body>
 </html>

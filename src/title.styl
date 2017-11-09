@@ -36,7 +36,6 @@
   margin-top: -0.75rem;
 }
 
-
 .title + .subtitle {
   margin-top: -1.25rem;
 }
@@ -61,18 +60,18 @@ for $size in $padSteps {
 
   .title--{$sizeName} {
     @extend .title;
-    color: $titleTextColor;
     font-size: $size rem;
   }
 
   .subtitle--{$sizeName} {
     @extend .subtitle;
+    opacity: .8
     margin-top: -1.25rem;
-    color: $secondaryTextColor;
     font-size: $size*.75 rem;
   }
 
 }
+
 
 
 

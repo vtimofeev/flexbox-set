@@ -53,19 +53,6 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-weight: 600;
-  line-height: 38px;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -78,8 +65,6 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
   outline: 0;
 }
 
@@ -94,13 +79,6 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
 }
 
 /* Removes awkward default styles on some inputs for iOS */
@@ -115,12 +93,6 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 input[type="email"]:focus,
@@ -138,9 +110,6 @@ select:focus {
 
 label,
 legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600;
 }
 
 fieldset {
@@ -204,35 +173,19 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1;
-}
-
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem;
+//  margin-bottom: 1rem;
 }
 
 input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem;
+//  margin-bottom: 1.5rem;
 }
 
 pre,
@@ -244,7 +197,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem;
+//  margin-bottom: 2.5rem;
 }
 
 /* Utilities
@@ -271,8 +224,7 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
+  margin-bottom: 3rem;
   border-top: 1px solid #E1E1E1;
 }
 

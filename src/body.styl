@@ -1,11 +1,3 @@
-* {
-  -ms-scroll-chaining: none;
-}
-
-*[contenteditable] {
-  -webkit-user-select: auto !important;
-}
-
 html, body {
   position: relative;
   width: 100%;
@@ -20,4 +12,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: $defaultTextColor;
   text-size-adjust: 100%;
+}
+
+// Fixes
+* {
+  -ms-scroll-chaining: none;
+}
+
+*[contenteditable] {
+  -webkit-user-select: auto !important;
 }

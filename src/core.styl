@@ -5,7 +5,6 @@
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 300;
 }
 
 h1 {
@@ -21,19 +20,15 @@ h3 {
 }
 
 h4 {
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 h5 {
-  line-height: 1.5;
-}
-
-h6 {
   line-height: 1.6;
 }
 
-/* Larger than phablet */
-@media (min-width: $smallViewportWidth) {
+h6 {
+  line-height: 1.8;
 }
 
 p {
@@ -202,29 +197,27 @@ form {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+.full-width {
   width: 100%;
   box-sizing: border-box;
 }
 
-.u-max-full-width {
+.max-full-width {
   max-width: 100%;
   box-sizing: border-box;
 }
 
-.u-pull-right {
+.pull-right {
   float: right;
 }
 
-.u-pull-left {
+.pull-left {
   float: left;
 }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   border-top: 1px solid #E1E1E1;
 }
 
@@ -233,8 +226,7 @@ hr {
 
 /* Self Clearing Goodness */
 .container:after,
-.row:after,
-.u-cf {
+.clear {
   content: "";
   display: table;
   clear: both;
@@ -250,9 +242,7 @@ there.
 */
 
 /*
-
       Container - Columns
-
 */
 
 .container {
@@ -264,18 +254,8 @@ there.
   box-sizing: border-box;
 }
 
-.cols {
-  width: 100%;
-  float: left;
-  box-sizing: border-box;
-}
-
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0;
-  }
 }
 
 /* Larger than mobile */
@@ -284,6 +264,10 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
 }
 
 /* Larger than tablet */
@@ -295,9 +279,8 @@ there.
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
     max-width: 1160px;
   }
 }
-

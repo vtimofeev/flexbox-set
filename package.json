@@ -1,6 +1,6 @@
 {
   "name": "flexbox-set",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Set of css styles to create flexbox layout",
   "main": "src/index.css",
   "scripts": {

@@ -16,11 +16,16 @@ for $palleteName, $palette in $palettes {
   for $index, $color in $palette {
     $bg-name = 'bg--' + $palleteName + '-' + $index
     $text-name = 'text--' + $palleteName + '-' + $index
+    $border-name = 'border--' + $palleteName + '-' + $index
+
     .{$bg-name} {
       background-color: $color;
     }
     .{$text-name} {
-      background-color: $color;
+      text-color: $color;
+    }
+    .{$border-name} {
+      border-color: $color;
     }
   }
 }

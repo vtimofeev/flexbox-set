@@ -94,7 +94,6 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #5839ff;
   outline: 0;
 }
 fieldset {
@@ -126,9 +125,6 @@ ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-}
-li {
-  margin-bottom: 1rem;
 }
 code {
   padding: 0.2rem 0.5rem;

@@ -879,6 +879,7 @@ hr {
   background-size: cover;
 }
 .cols,
+.flex,
 .flex-columns,
 .cols--center,
 .cols--top,
@@ -897,6 +898,7 @@ hr {
   box-sizing: border-box;
 }
 .cols .flex-break,
+.flex .flex-break,
 .flex-columns .flex-break,
 .cols--center .flex-break,
 .cols--top .flex-break,
